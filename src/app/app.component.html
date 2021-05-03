@@ -1,0 +1,10 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a mat-button [matMenuTriggerFor]="students">Students</a>
+    <mat-menu #students="matMenu">
+      <a mat-menu-item routerLink="/students/list" routerLinkActive="active">List</a>
+    </mat-menu>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<router-outlet></router-outlet>
